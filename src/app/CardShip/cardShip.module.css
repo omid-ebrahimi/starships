@@ -12,10 +12,6 @@
     justify-content: space-around;
 }
 
-.stats {
-    flex: 1;
-}
-
-.rate {
+.contentSection {
     flex: 1;
 }

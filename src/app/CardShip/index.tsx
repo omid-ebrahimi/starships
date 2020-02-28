@@ -10,11 +10,11 @@ function CardShip({ name, crew, passengers, hyperdrive_rating }: StarShip): JSX.
         <section className={styles.container}>
             <h3>{capitalizeFirstLetter(name)}</h3>
             <div className={styles.content}>
-                <div className={styles.stats}>
+                <div className={styles.contentSection}>
                     <span>Crew: {parseInt(crew) ? crew : 'None'}</span>
                     <p>Passengers: {parseInt(passengers) ? passengers : 'None'}</p>
                 </div>
-                <div className={styles.rate}>
+                <div className={styles.contentSection}>
                     <span>Hyperdrive Class</span>
                     <ProgressBar value={parseFloat(hyperdrive_rating)} />
                 </div>
