@@ -1,0 +1,11 @@
+.progress-bar--container {
+    display: flex;
+    height: 1em;
+    margin-top: 1em;
+    border-radius: .3em;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--theme-color-info);
+}

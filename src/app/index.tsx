@@ -7,7 +7,9 @@ function App(): JSX.Element {
     const { data } = useStarShips();
     return (
         <div className={styles.screen}>
-            <main>{data && data.results.map(ship => <CardShip key={ship['name']} {...ship} />)}</main>
+            <main style={{ width: '60%' }}>
+                {data && data.results.map(ship => <CardShip key={ship['name']} {...ship} />)}
+            </main>
         </div>
     );
 }
