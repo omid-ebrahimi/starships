@@ -1,4 +1,4 @@
-interface StarShip {
+export interface StarShip {
     name: string;
     crew: string;
     passengers: string;

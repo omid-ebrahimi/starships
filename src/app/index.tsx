@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './app.module.css';
+import CardShip from './CardShip';
 import { useStarShips } from './controller';
 
 function App(): JSX.Element {
     const { data } = useStarShips();
     return (
-        <div className={styles.screen}>{data && data.results.map(ship => <p key={ship['name']}>{ship.name}</p>)}</div>
+        <div className={styles.screen}>
+            <main>{data && data.results.map(ship => <CardShip key={ship['name']} {...ship} />)}</main>
+        </div>
     );
 }
 
