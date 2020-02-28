@@ -1,7 +1,4 @@
 :root {
-    --theme-color-success: #00C851
-}
-
-.color-success {
-    color: var(--theme-color-success)
+    --theme-color-success: #00C851;
+    --theme-color-info: #33b5e5
 }
