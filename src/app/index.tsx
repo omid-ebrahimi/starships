@@ -1,16 +1,20 @@
 import React from 'react';
-import styles from './app.module.css';
+import { Cell, Grid, Row } from '@material/react-layout-grid';
 import CardShip from './CardShip';
 import { useStarShips } from './controller';
 
 function App(): JSX.Element {
     const { data } = useStarShips();
     return (
-        <div className={styles.screen}>
-            <main style={{ width: '60%' }}>
-                {data && data.results.map(ship => <CardShip key={ship['name']} {...ship} />)}
-            </main>
-        </div>
+        <Grid>
+            <Row>
+                <Cell desktopColumns={3}> </Cell>
+                <Cell desktopColumns={6} tabletColumns={8} phoneColumns={4}>
+                    {data && data.results.map(ship => <CardShip key={ship['name']} {...ship} />)}
+                </Cell>
+                <Cell desktopColumns={3}> </Cell>
+            </Row>
+        </Grid>
     );
 }
 
