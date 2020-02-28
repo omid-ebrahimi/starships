@@ -5,3 +5,17 @@
     border: solid #af8eb5 medium;
     border-radius: 1em;
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stats {
+    flex: 1;
+}
+
+.rate {
+    flex: 1;
+}
