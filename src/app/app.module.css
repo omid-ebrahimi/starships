@@ -2,8 +2,3 @@
     display: flex;
     justify-content: space-evenly
 }
-
-.logo {
-    height: 40vmin;
-    pointer-events: none;
-}
