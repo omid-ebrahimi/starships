@@ -1,5 +1,5 @@
-import { getEndPointPath} from "./address";
+import { getEndPointPath } from './address';
 
-export function getStarShipsRequest() {
-    return getEndPointPath('starships')
+export function getStarShipsRequest(): string {
+    return getEndPointPath('starships');
 }
