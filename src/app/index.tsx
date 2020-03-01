@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cell, Grid, Row } from '@material/react-layout-grid';
-import logo from '../logo.svg';
+import Splash from './Splash';
 import CardShip from './CardShip';
 import styles from './app.module.css';
 import { useStarShips } from './controller';
@@ -24,7 +24,7 @@ function App(): JSX.Element {
             </Grid>
         );
     }
-    return <img src={logo} className={styles.logo} alt="logo" />;
+    return <Splash />;
 }
 
 export default App;
