@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Loading from '../Loading';
+import Loading from '../../components/Loading';
 import CardShip from './CardShip';
 import { ShipsProps } from './types';
 
