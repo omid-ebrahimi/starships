@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import React from 'react';
-import { StarShip } from '../../api/types';
-import { capitalizeFirstLetter } from '../../utils/string';
+import { StarShip } from '../../../api/types';
+import { capitalizeFirstLetter } from '../../../utils/string';
 import ProgressBar from './ProgressBar';
 import styles from './cardShip.module.css';
 

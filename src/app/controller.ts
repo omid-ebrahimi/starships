@@ -6,12 +6,18 @@ import { getStarShipsRequest } from '../api/requsets';
 
 export function useStarShips() {
     const [data, setData] = useState<GetStarShipsResponse>();
+    const [loading, setLoading] = useState(false);
 
     function loadData(path?: string | null): void {
-        if (path) Transport.get<GetStarShipsResponse>(path).then(setData);
+        setLoading(true);
+        if (path)
+            Transport.get<GetStarShipsResponse>(path)
+                .then(setData)
+                .catch(console.error)
+                .finally(() => setLoading(false));
     }
 
     useEffect(() => loadData(getStarShipsRequest()), []);
 
-    return { data, loadData };
+    return { data, loading, loadData };
 }
