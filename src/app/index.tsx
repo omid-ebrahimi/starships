@@ -6,7 +6,7 @@ import styles from './app.module.css';
 import { useStarShips } from './controller';
 
 function App(): JSX.Element {
-    const { data } = useStarShips();
+    const { data, loadData } = useStarShips();
     if (data) {
         return (
             <Grid>
@@ -18,8 +18,8 @@ function App(): JSX.Element {
                     <Cell desktopColumns={3}> </Cell>
                 </Row>
                 <Row className={styles.footer}>
-                    <p>Previous</p>
-                    <p>Next</p>
+                    <a onClick={(): void => loadData(data.previous)}>Previous</a>
+                    <a onClick={(): void => loadData(data.next)}>Next</a>
                 </Row>
             </Grid>
         );
