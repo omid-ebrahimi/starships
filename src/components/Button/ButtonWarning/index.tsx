@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import styles from './buttonWarning.module.css';
 
-function ButtonWarning(props): JSX.Element {
-    return <button {...props} className={styles.button} />;
+function ButtonWarning({ className, ...otherProps }: ButtonHTMLAttributes<HTMLButtonElement>): JSX.Element {
+    return <button {...otherProps} className={`${styles.button} ${className}`} />;
 }
 
 export default ButtonWarning;
