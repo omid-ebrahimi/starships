@@ -9,12 +9,13 @@ export function useStarShips() {
     const [loading, setLoading] = useState(false);
 
     function loadData(path?: string | null): void {
-        setLoading(true);
-        if (path)
+        if (path) {
+            setLoading(true);
             Transport.get<GetStarShipsResponse>(path)
                 .then(setData)
                 .catch(console.error)
                 .finally(() => setLoading(false));
+        }
     }
 
     useEffect(() => loadData(getStarShipsRequest()), []);
