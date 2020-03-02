@@ -1,4 +1,6 @@
 .footer {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    background-color: lightgray;
+    padding: 1.5em 0;
 }
