@@ -1,6 +1,8 @@
+## Online Demo:
+
 Open [https://starships.ir](https://starships.ir) to view it in the browser.
 
-## How to see demo in my localhost?
+## How to run it in my localhost?
 
 In the project directory, run the following commands:
 
