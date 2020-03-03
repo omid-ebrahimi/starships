@@ -22,12 +22,17 @@ function App(): JSX.Element {
                     </Row>
                 </Grid>
                 <footer className={styles.footer}>
-                    <ButtonWarning onClick={(): void => loadData(previous)} disabled={loading || !previous}>
-                        Previous
-                    </ButtonWarning>
-                    <ButtonSuccess onClick={(): void => loadData(next)} disabled={loading || !next}>
-                        Next
-                    </ButtonSuccess>
+                    <div className={styles.paginator}>
+                        <ButtonWarning onClick={(): void => loadData(previous)} disabled={loading || !previous}>
+                            Previous
+                        </ButtonWarning>
+                        <ButtonSuccess onClick={(): void => loadData(next)} disabled={loading || !next}>
+                            Next
+                        </ButtonSuccess>
+                    </div>
+                    <address className={styles.address}>
+                        Created by <a href="https://omid.ebrahimi.pro">Omid Ebrahimi</a>
+                    </address>
                 </footer>
             </Fragment>
         );

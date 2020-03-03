@@ -1,6 +1,15 @@
 .footer {
-    display: flex;
-    justify-content: space-evenly;
     background-color: lightgray;
     padding: 1.5em 0;
+}
+
+.paginator {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.address {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: .8em;
 }
